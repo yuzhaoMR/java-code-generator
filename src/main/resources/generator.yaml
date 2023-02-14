@@ -1,0 +1,24 @@
+author: jony
+packageName: com.jony.code # 生成的文件目录
+mybatisPlusEnable: false # 启用mybatis-plus模式(默认)
+jpaEnable: false         # 启用JPA模式
+swaggerEnable: false     # 启用swagger
+lombokEnable: true       # 启用lombok
+idStrategy: AUTO         # 主键生成策略
+fileOverride: true       # 重名文件覆盖
+mapperUnderSource: false # MyBatis映射文件放于source目录下
+path:
+  controller: controller
+  service: service.impl
+  interf: service
+  dao: dao
+  entity: entity
+  mapper: mybatis
+
+name: # 自定义文件名及类名，$s为固定占位符
+  controller: $sAction
+  service: $sServiceImpl
+  interf: $sService
+  dao: $sDao
+  entity: $sDO
+  mapper: $sMapper
